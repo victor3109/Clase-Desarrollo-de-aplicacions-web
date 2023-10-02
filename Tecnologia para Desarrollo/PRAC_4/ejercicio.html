@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+        .row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        
+        .column {
+          flex: 1;
+          padding: 7px;
+        }
+  </style>
+</head>
+<body>
+    <form action="" method="post">
+    <fieldset>
+        <legend>Detalles de la foto</legend><br>
+            Titulo
+            <br><textarea rows="1" cols="40"></textarea><br>
+              
+        <br>
+        Descripción<br><textarea rows="6" cols="59"></textarea><br>
+        <br>
+    <div class="row">
+        <div class="column">
+                Continente<br>
+                <select name="Continente">
+                    <option value="africa"> África </option>
+                    <option value="asia"> Asia </option>
+                    <option value="europa"> Europa</option>
+                    <option value="norteamerica"> Norte américa </option>
+                </select>
+                <br><br>
+                Pais<br>
+                <select name="Pais">
+                    <option value="canada">Canadá</option>
+                    <option value="mexico">México</option>
+                    <option value="estados_unidos">Estados Unidos</option>
+                </select>
+                <br><br>
+             Ciudad<br>
+             <input type="text" name="ciudad" id="ciudad" list="ciudad-lista">
+             <datalist id="ciudad-lista">
+                <option value="Calagary">
+                <option value="Monterreal">
+                <option value="Toronto">
+                <option value="Vancouver">
+                <option value="Tlaxcala">   
+              </datalist>  
+              <br><br>
+              Acepto la licencia de software<input type="checkbox" name="info" />
+              <br><br>
+              <label for="tentacles">Califica esta foto:</label><br>
+              <input type="number" id="tentacles" name="tentacles"
+              min="1" max="10">
+             <br><br>
+             Colección de color:<br><input type="color"> <br><br>
+             <input type="submit" value="Enviar">
+             <input type="button" value="Limpiar">             
+
+             </div>
+
+
+
+        <div class="column">
+            Copyright?<br>
+            <input type="radio" name="copy" value="derechos"> Todos los derechos reservados<br>
+            <input type="radio" name="copy" value="creative"checked="checked"> Creative Commons<br>
+            Licencias Creative Commons
+            <br><input type="checkbox" name="copy" value="derechos"> Atribución
+            <br><input type="checkbox" name="copy" value="creative"> No comercial
+            <br><input type="checkbox" name="copy" value="creative"> No hay trabajos derivativos
+            <br><input type="checkbox" name="copy" value="creative"> Compartir por igual<br><br><br><br>
+            Fecha de toma: <br><input type="date"> <br>
+            <br>Hora de toma: <br><input type="time"> 
+        </div>
+      </div>
+
+    </fieldset>
+</body>
+</html>
